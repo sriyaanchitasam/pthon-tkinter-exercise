@@ -22,13 +22,13 @@ class PhotoApp:
     # ================= HOME PAGE =================
     def home_page(self):
         self.clear_window()
-        tk.Label(self.root, text="Welcome to Photo App 🎨", font=("Arial Rounded MT Bold", 26),
+        tk.Label(self.root, text="Welcome to Photo App ", font=("Arial Rounded MT Bold", 26),
                  bg="#F3F8FF", fg="#333").pack(pady=80)
 
-        tk.Button(self.root, text="🖼️ Open Photo Gallery", command=self.gallery_page,
+        tk.Button(self.root, text=" Open Photo Gallery", command=self.gallery_page,
                   bg="#8FD6E1", font=("Arial", 14), width=25, height=2, relief="ridge").pack(pady=20)
 
-        tk.Button(self.root, text="🧩 Open Collage Maker", command=self.collage_page,
+        tk.Button(self.root, text=" Open Collage Maker", command=self.collage_page,
                   bg="#9EE493", font=("Arial", 14), width=25, height=2, relief="ridge").pack(pady=20)
 
     # ================= GALLERY PAGE =================
@@ -87,7 +87,7 @@ class PhotoApp:
     def collage_page(self):
         self.clear_window()
 
-        tk.Label(self.root, text="🧩 Collage Maker", font=("Arial Rounded MT Bold", 22),
+        tk.Label(self.root, text=" Collage Maker", font=("Arial Rounded MT Bold", 22),
                  bg="#F3F8FF", fg="#333").pack(pady=10)
 
         tk.Button(self.root, text="Select Images", width=15, command=self.create_collage, bg="#9EE493").pack(pady=5)
@@ -168,3 +168,4 @@ class PhotoApp:
 root = tk.Tk()
 app = PhotoApp(root)
 root.mainloop()
+
